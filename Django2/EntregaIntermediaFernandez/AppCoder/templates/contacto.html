@@ -1,3 +1,9 @@
+{% extends 'index.html' %}
+
+{% block contacto %}
+    
+
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +14,7 @@
 </head>
 <body>
     <div>
+        make_list
         <h1> {% for Contacto in contacto %}
              {{Contacto.sucursal}} 
              {{Contacto.telefono}}
@@ -17,3 +24,4 @@
     </div>
 </body>
 </html>
+{% endblock %}

@@ -8,7 +8,7 @@ from django.shortcuts import render
 
 def inicio(request):
     
-    return render(request, r"C:\Users\MSI GX70\Desktop\MVC-DaianaFernandez-master\Django2\EntregaIntermediaFernandez\AppCoder\templates\index.html")
+    return render(request, r"C:\Users\MSI GX70\Desktop\MVC-DaianaFernandez-master\Django2\EntregaIntermediaFernandez\AppCoder\templates\inicio.html")
 
 def alimentos(request):
     menu1 = Alimentos.objects.all()
@@ -27,6 +27,9 @@ def contacto(request):
     menu4 = Contacto.objects.all()
     return render(request, r"C:\Users\MSI GX70\Desktop\MVC-DaianaFernandez-master\Django2\EntregaIntermediaFernandez\AppCoder\templates\contacto.html", {"contacto": menu4} )
 
+def formulario(request):
+    menu5 = Contacto.objects.all()
+    return render(request, r"C:\Users\MSI GX70\Desktop\MVC-DaianaFernandez-master\Django2\EntregaIntermediaFernandez\AppCoder\templates\formulario.html", {"formulario": menu5} )
 
 
     
