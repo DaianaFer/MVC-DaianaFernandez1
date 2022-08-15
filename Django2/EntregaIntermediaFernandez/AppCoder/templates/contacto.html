@@ -14,13 +14,14 @@
 </head>
 <body>
     <div>
-        make_list
+        
         <h1> {% for Contacto in contacto %}
+            <p>
              {{Contacto.sucursal}} 
              {{Contacto.telefono}}
              {{Contacto.email}}
           
-        {% endfor %} </h1>
+        {% endfor %} </p></h1>
     </div>
 </body>
 </html>

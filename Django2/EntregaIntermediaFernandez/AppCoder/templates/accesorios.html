@@ -15,14 +15,44 @@
 <body>
     <div> 
         <h1>{% for Accesorios in accesorios %}
-          {{Accesorios.nombre}} 
+           
           
-          {{Accesorios.tipo}}
-          
-          {{Accesorios.material}}
-        {% endfor %} </h1>
+    
+        
+     <p>
+    <form class="d-flex">
+        <button class="btn btn-outline-dark" type="submit">
+            <i class="bi-cart-fill me-1"></i>
+            Carrito
+            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+        </button>
+    </form>
+  <section class="py-5">
+<div class="container px-4 px-lg-5 my-5">
+<div class="row gx-4 gx-lg-5 align-items-center">
+    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></div>
+    <div class="col-md-6">
+        <div class="small mb-1"> {{Accesorios.nombre}} </div>
+        <h1 class="display-5 fw-bolder">{{Accesorios.tipo}}</h1>
+        <div class="fs-5 mb-5">
+            <span class="text-decoration-line-through">$45.00</span>
+            <span>$40.00</span>
+        </div>
+        <p class="lead">{{Accesorios.material}}</p>
+        <div class="d-flex">
+            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+            <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                <i class="bi-cart-fill me-1"></i>
+                Agregar al Carrito
+            </button>
+        </div>
     </div>
-  
+</div>
+
+</section>
+{% endfor %} 
+</p></h1>
+</div>
 </body>
 </html>
 {% endblock  %}
